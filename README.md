@@ -2,24 +2,51 @@
 www.dio.me
 
 ## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de API e Entity Framework, da trilha .NET da DIO.
+Neste desafio, apliquei na prática todos os conhecimentos adquiridos no módulo de **API e Entity Framework** da trilha .NET da DIO. O objetivo foi desenvolver uma **API completa para gerenciamento de tarefas**, utilizando **.NET + Entity Framework + SQLite**.
 
-## Contexto
-Você precisa construir um sistema gerenciador de tarefas, onde você poderá cadastrar uma lista de tarefas que permitirá organizar melhor a sua rotina.
+✅ Desafio finalizado com sucesso  
+✅ Todas as funcionalidades implementadas  
+✅ CRUD completo em funcionamento  
+✅ Migration criada e banco configurado  
+✅ Swagger funcionando corretamente  
 
-Essa lista de tarefas precisa ter um CRUD, ou seja, deverá permitir a você obter os registros, criar, salvar e deletar esses registros.
+## Contexto do Projeto
+Desenvolvi um **sistema gerenciador de tarefas**, no qual é possível:
 
-A sua aplicação deverá ser do tipo Web API ou MVC, fique a vontade para implementar a solução que achar mais adequado.
+- Cadastrar tarefas
+- Listar todas as tarefas
+- Filtrar tarefas por:
+  - Título  
+  - Data  
+  - Status  
+- Atualizar tarefas
+- Excluir tarefas
 
-A sua classe principal, a classe de tarefa, deve ser a seguinte:
+Toda a aplicação foi construída no formato de **Web API**, utilizando **boas práticas de desenvolvimento**, controle de rotas e persistência com **Entity Framework**.
 
 ![Diagrama da classe Tarefa](diagrama.png)
 
 Não se esqueça de gerar a sua migration para atualização no banco de dados.
 
-## Métodos esperados
-É esperado que você crie o seus métodos conforme a seguir:
+##  Model da Tarefa
 
+A classe principal do sistema é a **Tarefa**, que possui a seguinte estrutura:
+
+```json
+{
+  "id": 0,
+  "titulo": "string",
+  "descricao": "string",
+  "data": "2025-11-30T10:00:00",
+  "status": 0
+}
+```
+Onde o status representa um Enum:
+0 → Pendente
+1 → Finalizado
+2 → Cancelado
+
+## Métodos esperados
 
 **Swagger**
 
@@ -28,7 +55,7 @@ Não se esqueça de gerar a sua migration para atualização no banco de dados.
 
 
 **Endpoints**
-
+Todos os endpoints foram implementados e testados via Swagger:
 
 | Verbo  | Endpoint                | Parâmetro | Body          |
 |--------|-------------------------|-----------|---------------|
@@ -41,18 +68,20 @@ Não se esqueça de gerar a sua migration para atualização no banco de dados.
 | GET    | /Tarefa/ObterPorStatus  | status    | N/A           |
 | POST   | /Tarefa                 | N/A       | Schema Tarefa |
 
-Esse é o schema (model) de Tarefa, utilizado para passar para os métodos que exigirem
 
-```json
-{
-  "id": 0,
-  "titulo": "string",
-  "descricao": "string",
-  "data": "2022-06-08T01:31:07.056Z",
-  "status": "Pendente"
-}
-```
+## Tecnologias Utilizadas
 
+✅ .NET 9
+✅ Entity Framework Core 8
+✅ SQLite
+✅ Swagger
+✅ API REST
+✅ Migrations
+✅ Git e GitHub
 
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+## Status do Projeto
+✔ CRUD completo implementado
+✔ Banco configurado com SQLite
+✔ Migrations aplicadas
+✔ Todas as rotas funcionando
+✔ Projeto versionado no GitHub
