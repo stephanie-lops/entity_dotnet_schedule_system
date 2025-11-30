@@ -4,11 +4,11 @@ www.dio.me
 ## Desafio de projeto
 Neste desafio, apliquei na prática todos os conhecimentos adquiridos no módulo de **API e Entity Framework** da trilha .NET da DIO. O objetivo foi desenvolver uma **API completa para gerenciamento de tarefas**, utilizando **.NET + Entity Framework + SQLite**.
 
-✅ Desafio finalizado com sucesso  
-✅ Todas as funcionalidades implementadas  
-✅ CRUD completo em funcionamento  
-✅ Migration criada e banco configurado  
-✅ Swagger funcionando corretamente  
+- Desafio finalizado com sucesso  
+- Todas as funcionalidades implementadas  
+- CRUD completo em funcionamento  
+- Migration criada e banco configurado  
+- Swagger funcionando corretamente  
 
 ## Contexto do Projeto
 Desenvolvi um **sistema gerenciador de tarefas**, no qual é possível:
@@ -71,13 +71,13 @@ Todos os endpoints foram implementados e testados via Swagger:
 
 ## Tecnologias Utilizadas
 
-✅ .NET 9
-✅ Entity Framework Core 8
-✅ SQLite
-✅ Swagger
-✅ API REST
-✅ Migrations
-✅ Git e GitHub
+- .NET 9
+- Entity Framework Core 8
+- SQLite
+- Swagger
+- API REST
+- Migrations
+- Git e GitHub
 
 ## Status do Projeto
 ✔ CRUD completo implementado
